@@ -335,7 +335,7 @@ def ai_trading():
 
     # 6. YouTube 자막 데이터 가져오기
     # youtube_transcript = get_combined_transcript("3XbtEX3jUv4")
-    f = open("strategy.txt", "r", encoding="utf-8")
+    f = open("strategy.txt", "r", encoding="utf-8", errors="ignore")
     youtube_transcript = f.read()
     f.close()
 
